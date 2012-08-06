@@ -2,327 +2,99 @@
 @import "compass/utilities";
 @import "blueprint";
 
+body {
+	background-color:WhiteSmoke;
+}
+
 .main-window {
-	width: 800px;
-	height: 600px;
-	background-color: gray;
+	min-width: 1000px;
+	width: 100%;
+	height: 60%;
+	background-color: White;
 	position: absolute;
-	left: 50%;
-	top: 50%;
-	margin: -300px 0 0 -400px;
+	top: 20%;
+	left: 0%;
 }
 
-/*
-.resume {
-	font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	padding: 20px;
-}         
-
-.skillbox .h1 {
-	font-size: 150%;
-	line-height: 250%;
-	margin-top: 30px;
-}
-.skillbox .h2{
- 	font-weight: bold;
-	 font-size: 120%;
- }
-
-.skillbox {
-  display: -webkit-box;
-  -webkit-box-orient: horizontal;
-
-  display: -moz-box;
-  -moz-box-orient: horizontal;
-
-  display: box;
-  box-orient: horizontal;
-  clear: both;
-}
-
-.skillbox > div {
-	-webkit-box-flex: 1;
-	-moz-box-flex: 1;
-	box-flex: 1;
-	
-	-moz-transition: all 0.7s ease-out;
-	-o-transition: all 0.7s ease-out;
-	-webkit-transition: all 0.7s ease-out;
-	transition: all 0.7s ease-out;
-
-	border-left: 15px solid white;
-	padding-top: 10px;
-	padding-left: 10px;
-	max-width: 300px;
-	padding-right: 10px;
-}
-
-.skillbox .skill-text {
-	padding-left: 15px;
-}
-
-.skillbox > div:hover{
-	text-shadow: 0 0 1px #8c8484;
-	border-color: rgb(173, 58, 43);
-}
-
-.project-box .view-tenth img {
-   -webkit-transform: scaleY(1);
-   -moz-transform: scaleY(1);
-   -o-transform: scaleY(1);
-   -ms-transform: scaleY(1);
-   transform: scaleY(1);
-   -webkit-transition: all 0.7s ease-in-out;
-   -moz-transition: all 0.7s ease-in-out;
-   -o-transition: all 0.7s ease-in-out;
-   -ms-transition: all 0.7s ease-in-out;
-   transition: all 0.7s ease-in-out;
-}
-.project-box .view-tenth .mask {
-   background-color: rgba(255, 231, 179, 0.3);
-   -webkit-transition: all 0.5s linear;
-   -moz-transition: all 0.5s linear;
-   -o-transition: all 0.5s linear;
-   -ms-transition: all 0.5s linear;
-   transition: all 0.5s linear;
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-   filter: alpha(opacity=0);
-   opacity: 0;
-}
-.project-box .view-tenth h2 {
-   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-   background: transparent;
-   margin: 20px 40px 0px 40px;
-   -webkit-transform: scale(0);
-   -moz-transform: scale(0);
-   -o-transform: scale(0);
-   -ms-transform: scale(0);
-   transform: scale(0);
-   color: #333;
-   -webkit-transition: all 0.5s linear;
-   -moz-transition: all 0.5s linear;
-   -o-transition: all 0.5s linear;
-   -ms-transition: all 0.5s linear;
-   transition: all 0.5s linear;
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-   filter: alpha(opacity=0);
-   opacity: 0;
-}
-.project-box .view-tenth p {
-   color: #333;
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-   filter: alpha(opacity=0);
-   opacity: 0;
-   -webkit-transform: scale(0);
-   -moz-transform: scale(0);
-   -o-transform: scale(0);
-   -ms-transform: scale(0);
-   transform: scale(0);
-   -webkit-transition: all 0.5s linear;
-   -moz-transition: all 0.5s linear;
-   -o-transition: all 0.5s linear;
-   -ms-transition: all 0.5s linear;
-   transition: all 0.5s linear;
-}
-.project-box .view-tenth a.info {
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-   filter: alpha(opacity=0);
-   opacity: 0;
-   -webkit-transform: scale(0);
-   -moz-transform: scale(0);
-   -o-transform: scale(0);
-   -ms-transform: scale(0);
-   transform: scale(0);
-   -webkit-transition: all 0.5s linear;
-   -moz-transition: all 0.5s linear;
-   -o-transition: all 0.5s linear;
-   -ms-transition: all 0.5s linear;
-   transition: all 0.5s linear;
-}
-.project-box .view-tenth:hover img {
-   -webkit-transform: scale(10);
-   -moz-transform: scale(10);
-   -o-transform: scale(10);
-   -ms-transform: scale(10);
-   transform: scale(10);
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
-   filter: alpha(opacity=0);
-   opacity: 0;
-}
-.project-box .view-tenth:hover .mask {
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
-   filter: alpha(opacity=100);
-   opacity: 1;
-}
-.project-box .view-tenth:hover h2,.view-tenth:hover p,.view-tenth:hover a.info {
-   -webkit-transform: scale(1);
-   -moz-transform: scale(1);
-   -o-transform: scale(1);
-   -ms-transform: scale(1);
-   transform: scale(1);
-   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
-   filter: alpha(opacity=100);
-   opacity: 1;
-}
-
-.project-box {
-	width: 360px;
-	height: 260px;
-	float: left;
-	overflow: hidden;
-	position: relative;
-	padding: 20px 15px 0 0;
-}
-
-.project-box .view {
-   width: 300px;
-   height: 200px;
-   margin: 10px;
-   float: left;
-   border: 10px solid #ffffff;
-   overflow: hidden;
-   position: relative;
-   text-align: center;
-   -webkit-box-shadow: 2px 2px 20px #bbbbbb;
-   -moz-box-shadow: 2px 2px 20px #bbbbbb;
-   box-shadow: 2px 2px 20px #bbbbbb;
-   cursor: default;
-   background: #fff url(../images/bgimg.jpg) no-repeat center center;
-}
-.project-box .view .mask,.project-box .view .content {
-   width: 300px;
-   height: 200px;
-   position: absolute;
-   overflow: hidden;
-   top: 0;
-   left: 0;
-}
-.project-box .view img {
-   display: block;
-   position: relative;
-   margin: 0 auto 0 auto !important;
-   padding: 0!important;
-   border-width: 0!important;
-	vertical-align: middle;
-	height: 100%;
-}
-.project-box .view h2 {
-   text-transform: uppercase;
-   color: #fff;
-   text-align: center;
-   position: relative;
-   font-size: 17px;
-   padding: 10px;
-   background: rgba(0, 0, 0, 0.8);
-   margin: 20px 0 0 0;
-}
-.project-box .view p {
-	position: reative;
-   color: rgb(51, 51, 51);
-   padding: 10px 20px 20px;
-   text-align: center;
-   font: italic 12px Georgia, "Times New Roman", Times, serif;
-}
-.project-box .view a.info {
-   display: inline-block;
-   text-decoration: none;
-   padding: 7px 14px;
-   background: #000;
-   color: #fff;
-   text-transform: uppercase;
-   -webkit-box-shadow: 0 0 1px #000;
-   -moz-box-shadow: 0 0 1px #000;
-   box-shadow: 0 0 1px #000;
-}
-
-.project-box .badge div {
-	border: 1px dashed #d5d2d2;
-	margin: 2px;
-	width: 90px;
-	height: 30px;
-	text-shadow: 0 2px 3px #000000;
-	font: 16px "Lucida Grande", Lucida, Verdana, sans-serif;
-	text-align: center;
-	padding-top: 10%;
-}
-
-.project-box .badge {
-opacity : 0;
--webkit-transform: scale(2);
--moz-transform: scale(2);
--o-transform: scale(2);
--ms-transform: scale(2);
-transform: scale(2);
--webkit-transition: all 0.5s linear 1s;
--moz-transition: all 0.5s linear 1s;
--o-transition: all 0.5s linear 1s;
--ms-transition: all 0.5s linear 1s;
-transition: all 0.5s linear 1s;
-
-	color: #ffffff;
-	background-color: #f90505;
-	display: block;
-
-	text-align: center;
-	-moz-box-shadow: -1px 1px 2px #6f6f6f;
-	-webkit-box-shadow: -1px 1px 2px #6f6f6f;
-	box-shadow: -1px 1px 2px #6f6f6f;
+.left {
+	width: 50%;
+	height: 90%;
+	background: url('img/left_no_col.png') no-repeat right;
+	background-size: auto 100%;
 	position: absolute;
-	top: 25px;
-	right: 20px;
-	z-index: 1;
-	overflow: hidden;
+	top:0%;
+	left:0%;
+	z-index:100;
 }
 
-.project-box .badge:hover {
-	z-index: -1;
+.left:hover, .stripes:nth-child(2):hover > .left{
+	background-image: url('img/left_col.png');
 }
 
-.project-box:hover .badge {
-	opacity:1;
-	
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-o-transform: scale(1);
-	-ms-transform: scale(1);
-	transform: scale(1);
-	
-	transform:rotate(25deg);
-	-webkit-transform:rotate(25deg); 
-	-moz-transform:rotate(25deg);
-	-o-transform:rotate(25deg);
-	z-index: 1;
-	overflow: visible;
-	display: block;
+.right {
+	width: 50%;
+	height: 90%;
+	background: url('img/right_no_col.png') no-repeat left;
+	background-size: auto 100%;
+	position: absolute;
+	top:0%;
+	right:0%;
+	z-index:100;
 }
 
-img[title~="hidden"]{
-	display:none!important;
+.right:hover , .stripes:nth-child(4):hover + .right{
+	background-image: url('img/right_col.png');
 }
 
-.project-box .view a.info:hover {
-   -webkit-box-shadow: 0 0 5px #000;
-   -moz-box-shadow: 0 0 5px #000;
-   box-shadow: 0 0 5px #000;
+.stripes {
+	width:45%;
+	height:100%;
+	position:absolute;
+	text-shadow: 0px 2px 3px WhiteSmoke;
+}
+
+.left .stripes {
+	left:5%;
+	text-align:left;
+}
+
+.right .stripes {
+	right:5%;      
+	text-align:right;
 }
 
 
-.share-controls {
-width:350px;
+.stripes div {
+	width: 100%;
+	height: 20%;
 }
 
-.personal {
-text-align:justify;
-}           
-
-.personal .filler {
-	width:100%;
-	display: inline-block;
-	height:0px;
+.name {
+	font-size: 320%;
+	color: DarkGray;
+	font-family: Arial;
 }
 
-.personal span {   
-	display: inline-block;
-	font: 12px Verdana, sans-serif;
+.badges a{
+	float: right;
 }
-*/
+
+.left .stripes {
+	opacity:0.2;
+	filter:alpha(opacity=20); /* For IE8 and earlier */
+}
+
+.left:hover .stripes {
+	opacity:1.0;
+	filter:alpha(opacity=1000); /* For IE8 and earlier */
+} 
+
+.right .stripes {
+	opacity:0.2;
+	filter:alpha(opacity=20); /* For IE8 and earlier */
+}
+
+.right:hover .stripes {
+	opacity:1.0;
+	filter:alpha(opacity=1000); /* For IE8 and earlier */
+}
