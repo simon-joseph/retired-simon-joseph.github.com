@@ -1,12 +1,22 @@
-/*@import "compass/reset";
+@import "compass/reset";
 @import "compass/utilities";
-@import "blueprint";*/
+@import "blueprint";
+
+.main-window {
+	width: 800px;
+	height: 600px;
+	background-color: gray;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -300px 0 0 -400px;
+}
 
 /*
 .resume {
 	font-family: HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	padding: 20px;
-}          */
+}         
 
 .skillbox .h1 {
 	font-size: 150%;
@@ -315,3 +325,4 @@ text-align:justify;
 	display: inline-block;
 	font: 12px Verdana, sans-serif;
 }
+*/
