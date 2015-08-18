@@ -28,21 +28,23 @@ kramdown:
 owner:
   name: Szymon Laszczyński
   avatar: me.jpg
-  bio: "Describe your self."
-  email: 
-  disqus-shortname: 
+  bio: |
+    Quantitative Developer <br>
+    F# Programmer
+  email: szymonlaszczynski@gmail.com
+  disqus-shortname:
   twitter: #username
   facebook: #username
   google:
     plus: szymonlaszczynski
-    analytics: 
-    verify: 
-    ad-client: 
-    ad-slot: 
-  bing-verify: 
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
   github: simon-joseph
   stackoverflow: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
+  linkedin: szymonlaszczynski
   instagram: #username
   lastfm: #username
   tumblr: #username
